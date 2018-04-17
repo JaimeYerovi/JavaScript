@@ -6,12 +6,30 @@
 var nombre = "23";
 var edad = 23;
 var fecha = new Date();
+var casado = false;
+var casa = undefined;
+var carro = null;
 
-console.log()
 
-if(nombre === edad){
+var arreglo = []
+
+console.log(fecha);
+
+console.log(casa? "Verdadero" : "Falso");
+
+console.log(carro? "Verdadero" : "Falso");
+
+console.log(arreglo? "Verdadero" : "Falso");
+
+console.log(1? "Verdadero" : "Falso");
+
+console.log(0? "Verdadero" : "Falso");
+
+console.log(-1? "Verdadero" : "Falso");
+
+if (nombre === edad) {
     console.log("verdadero")
-}else{
+} else {
     console.log("Falso")
 }
 
