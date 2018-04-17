@@ -33,3 +33,29 @@ if (nombre === edad) {
     console.log("Falso")
 }
 
+var usuario = {
+
+    "nombre":"Jaime",
+    apellido:"Yerovi",
+    cedula:'1717216616',
+
+    imprimirEnConsola: function () {
+        console.log(this.nombre + ' ' + this.apellido + ' ' + this.cedula)
+    }
+
+};
+
+
+console.log( usuario.imprimirEnConsola());
+
+function sumarDosNumeros(numeroUno, numeroDos) {
+    return numeroUno+numeroDos;
+};
+
+var sumarDosNumerosV2 = function amigo(numeroUno, numeroDos) {
+    return numeroUno+numeroDos;
+};
+
+console.log(sumarDosNumeros(1,2));
+
+console.log(sumarDosNumerosV2(1,2));
