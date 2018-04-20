@@ -75,6 +75,7 @@ interface UsuarioDos{
 
     imprimirEnConsola(nombre:String):void;
 
+    usuario:Usuario;
 }
 
 let usuarioCuatro: UsuarioDos;
