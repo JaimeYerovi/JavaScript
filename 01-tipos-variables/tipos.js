@@ -63,6 +63,9 @@ console.log(sumarDosNumerosV2(1,2));
 var arregloDeNumeros = [1,2,3,"2", Date,false, null]
 
 for(var aux = 0; aux<10;aux++){
+
     console.log("Aux: ", aux);
+
 }
 
+console.log(arregloDeNumeros)

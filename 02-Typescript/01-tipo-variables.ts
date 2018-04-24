@@ -51,7 +51,7 @@ class Usuario {
 let usuarios: Usuario = new Usuario('Jaime', 23, '1717216616');
 
 
-let usuarioOtro ={
+let usuarioOtro = {
 
     mNombre: 'Jaime',
     mEdad: 23,
@@ -62,26 +62,33 @@ let usuarioOtro ={
 console.log(usuarios.imprimirEnConsola());
 console.log(usuarioOtro);
 
-function noHagoNada(){}
+function noHagoNada() {
+}
 console.log('no hago nada', noHagoNada())
 
-let usuarioTres:Usuario;
+let usuarioTres: Usuario;
 
-interface UsuarioDos{
+interface UsuarioDos {
 
     mNombre: String;
     mEdad: Number;
     mCedula: String;
 
-    imprimirEnConsola(nombre:String):void;
+    imprimirEnConsola(nombre: String): void;
 
-    usuario:Usuario;
+    usuario: Usuario;
 }
 
 let usuarioCuatro: UsuarioDos;
 
-usuarioCuatro = {
 
+class UsuarioTres {
 
+    constructor(mNombre: String,
+                mEdad: Number,
+                mCedula: String) {
+
+    }
 
 }
+

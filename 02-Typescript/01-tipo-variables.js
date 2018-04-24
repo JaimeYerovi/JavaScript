@@ -31,8 +31,13 @@ var usuarioOtro = {
 };
 console.log(usuarios.imprimirEnConsola());
 console.log(usuarioOtro);
-function noHagoNada() { }
+function noHagoNada() {
+}
 console.log('no hago nada', noHagoNada());
 var usuarioTres;
 var usuarioCuatro;
-usuarioCuatro = {};
+var UsuarioTres = (function () {
+    function UsuarioTres(mNombre, mEdad, mCedula) {
+    }
+    return UsuarioTres;
+}());
