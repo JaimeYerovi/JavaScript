@@ -2,6 +2,7 @@
  * Created by jaime on 24/04/2018.
  */
 var arregloNumeros = [1, 2, 3, 4, 5];
+var arregloDeudas = [23, 123.32, 23, 43, 123.43, 50, 1];
 //let arregloUsuarios: Array<UsuarioArreglo> =[
 var arregloUsuarios = [
     {
@@ -52,7 +53,18 @@ var resultadoDeLaResta = arregloNumeros.reduce(function (totalAcumulado, valorAr
     return totalAcumulado - valorArreglo;
 }, 20);
 console.log('resultado de la resta', resultadoDeLaResta);
+function calcularDeudaDeUsuario(edad) {
+    return arregloDeudas.reduce(function (totalAculado, deuda) {
+        return totalAculado + ((edad) / 100) * deuda;
+    }, 0);
+}
+var usuariosConCincoAniosMenos = arregloUsuarios.map(function (usuario) {
+    usuario.edad = usuario.edad - 5;
+    usuario.deuda = calcularDeudaDeUsuario(usuario.edad);
+    return usuario;
+});
+console.log(usuariosConCincoAniosMenos);
 var resultadoDeLasEdades = arregloUsuarios.reduce(function (totalEdadAcumulada, usuarioArreglo) {
     return totalEdadAcumulada + usuarioArreglo.edad;
-}, 20);
+}, 0);
 console.log('resultado de las edades', resultadoDeLasEdades);
