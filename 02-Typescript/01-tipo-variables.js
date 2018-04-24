@@ -11,7 +11,7 @@ var edad = 28;
 var fecha = new Date();
 var casado = false;
 //let mascotas: object = {};
-var Usuario = (function () {
+var Usuario = /** @class */ (function () {
     function Usuario(nombre, edad, cedula) {
         this.mNombre = nombre;
         this.mEdad = edad;
@@ -36,7 +36,7 @@ function noHagoNada() {
 console.log('no hago nada', noHagoNada());
 var usuarioTres;
 var usuarioCuatro;
-var UsuarioTres = (function () {
+var UsuarioTres = /** @class */ (function () {
     function UsuarioTres(mNombre, mEdad, mCedula) {
     }
     return UsuarioTres;
